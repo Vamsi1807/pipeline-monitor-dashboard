@@ -1,0 +1,139 @@
+.details-page{
+
+    background:#f5f7fb;
+
+    min-height:100vh;
+
+    padding:40px;
+
+}
+
+.back-link{
+
+    text-decoration:none;
+
+    color:#2563eb;
+
+    font-weight:bold;
+
+}
+
+.details-card{
+
+    margin-top:20px;
+
+    background:white;
+
+    border-radius:14px;
+
+    padding:30px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.details-card h1{
+
+    margin:0;
+
+}
+
+.success{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    background:#dcfce7;
+
+    color:#166534;
+
+    padding:8px 18px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+.failure{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    background:#fee2e2;
+
+    color:#991b1b;
+
+    padding:8px 18px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-top:35px;
+
+}
+
+.info-grid label{
+
+    font-weight:bold;
+
+    color:#64748b;
+
+}
+
+.info-grid p{
+
+    margin-top:8px;
+
+    font-size:18px;
+
+}
+
+.info-grid a{
+
+    margin-top:8px;
+
+    display:inline-block;
+
+    color:#2563eb;
+
+    text-decoration:none;
+
+}
+
+.buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.buttons a{
+
+    text-decoration:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px 18px;
+
+    border-radius:8px;
+
+}

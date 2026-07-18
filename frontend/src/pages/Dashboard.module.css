@@ -1,0 +1,186 @@
+.dashboard {
+    min-height: 100vh;
+    background: #f4f7fb;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    height: 70px;
+    background: #1e293b;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header span {
+    color: #cbd5e1;
+}
+
+/* ================= CONTENT ================= */
+
+.content {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 25px;
+    padding: 25px;
+}
+
+/* ================= LEFT PANEL ================= */
+
+.leftPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ================= RIGHT PANEL ================= */
+
+.rightPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.panelHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 4px;
+}
+
+.panelHeader h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #0f172a;
+}
+
+.panelHeader span {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.buildGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.buildCard {
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.buildTopRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.buildTopRow h3 {
+    margin: 4px 0 0;
+    color: #0f172a;
+    font-size: 18px;
+}
+
+.buildId {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.status {
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.failed {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.running {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.buildMeta {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.buildMeta span {
+    display: block;
+    color: #94a3b8;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.buildMeta strong {
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .buildGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        height: auto;
+        padding: 18px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .content {
+        padding: 18px;
+    }
+
+    .panelHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .buildMeta {
+        grid-template-columns: 1fr;
+    }
+}
