@@ -15,7 +15,14 @@ pipeline {
                 checkout scm
             }
         }
-
+stage('Check Environment') {
+    steps {
+        sh 'java -version'
+        sh 'echo JAVA_HOME=$JAVA_HOME'
+        sh 'which java'
+        sh 'ls -l /opt/java || true'
+    }
+}
         stage('Build Backend') {
             steps {
 
